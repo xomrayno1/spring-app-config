@@ -16,9 +16,13 @@ xem thông tin của images hoặc container <br>
 
 docker exec -it  561ee9dbf569 /bin/sh <br>
 
-truy cập vào container tương tác giống như cmd
+truy cập vào container tương tác giống như cmd <br>
 
-chạy lệnh redis-cli -> truy cập vào cmd redis
+chạy lệnh redis-cli -> truy cập vào cmd redis <br>
 
-dung exit de thoat khoi container
+dung exit de thoat khoi container <br>
+
+
+
+docker run -d --name cloudgateway_container -e CONFIG_SERVER_ADDRESS=http://host.docker.internal:9001 -e EUREKA_SERVER_ADDRESS=http://host.docker.internal:8761/eureka  -p 8080:9095 cloudgateway:0.0.1
 
