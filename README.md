@@ -26,3 +26,4 @@ dung exit de thoat khoi container <br>
 
 docker run -d --name cloudgateway_container -e CONFIG_SERVER_ADDRESS=http://host.docker.internal:9001 -e EUREKA_SERVER_ADDRESS=http://host.docker.internal:8761/eureka  -p 8080:9095 cloudgateway:0.0.1
 
+<p>docker-compose -f kafka-compose.yml up -d</p>
