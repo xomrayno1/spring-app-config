@@ -27,3 +27,11 @@ dung exit de thoat khoi container <br>
 docker run -d --name cloudgateway_container -e CONFIG_SERVER_ADDRESS=http://host.docker.internal:9001 -e EUREKA_SERVER_ADDRESS=http://host.docker.internal:8761/eureka  -p 8080:9095 cloudgateway:0.0.1
 
 <p>docker-compose -f kafka-compose.yml up -d</p>
+
+
+bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic test --from-beginning
+
+
+#note
+transaction cha va con phai khac bean thi Propagation.REQUIRES_NEW mới tạo ra cho cả 2 , 2 transaction khác nhau, nếu cùng bean thì ko thể
+https://stackoverflow.com/questions/28480480/propagation-requires-new-does-not-create-a-new-transaction-in-spring-with-jpa
