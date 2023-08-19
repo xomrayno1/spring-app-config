@@ -35,3 +35,6 @@ bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic test --f
 #note
 transaction cha va con phai khac bean thi Propagation.REQUIRES_NEW mới tạo ra cho cả 2 , 2 transaction khác nhau, nếu cùng bean thì ko thể
 https://stackoverflow.com/questions/28480480/propagation-requires-new-does-not-create-a-new-transaction-in-spring-with-jpa
+
+<br>
+docker build -t spring-docker:v0.1.3 .
