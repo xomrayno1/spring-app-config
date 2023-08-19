@@ -38,3 +38,5 @@ https://stackoverflow.com/questions/28480480/propagation-requires-new-does-not-c
 
 <br>
 docker build -t spring-docker:v0.1.3 .
+<br>
+docker exec -it ba1b811f9557 mysql -p
