@@ -40,3 +40,10 @@ https://stackoverflow.com/questions/28480480/propagation-requires-new-does-not-c
 docker build -t spring-docker:v0.1.3 .
 <br>
 docker exec -it ba1b811f9557 mysql -p
+
+
+show database;
+
+
+docker exec -it 4a9433d0a82d bash
+printenv
