@@ -1,1 +1,2 @@
-
+docker pull busybox
+docker run -it --name B1 busybox
