@@ -1,2 +1,15 @@
-docker pull busybox
-docker run -it --name B1 busybox
+docker pull busybox <br>
+docker run -it --name B1 busybox  <br>
+
+
+wget -o - 172.17.0.3  <br>
+
+câu lệnh từ server này lấy file từ địa chỉ  172.17.0.3 trong thư mục var/www  <br>
+docker run -it --name B1  busybox  <br>
+
+cd www/var  <br>
+touch index.html  <br>
+vi index.html   <br>
+httpd   <br>
+  
+docker run -it --name B1 -p 5002:80 busybox  <br>
