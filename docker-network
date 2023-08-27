@@ -13,3 +13,12 @@ vi index.html   <br>
 httpd   <br>
   
 docker run -it --name B1 -p 5002:80 busybox  <br>
+
+docker run -it --name B1 --network bridge B_1 busybox  <br>
+docker run -it --name B2 --network bridge B_2 busybox  <br>
+
+khác host nên từ B1 ping sang B2 ko được nếu muốn ping đc thì phải <br>
+
+docker network connect B_2 B1 <br>
+
+Container B1 sẽ kết nối đến 2 host <br>
